@@ -12,6 +12,6 @@ At this point where the contestant has only 2 doors to choose from the probabili
 ....
 ...
 
-## Simulation Results :chart_with_upwards_trend:
+## Simulation Results :gear::repeat::chart_with_upwards_trend:
 <img width="1200" height="711" alt="Image" src="https://github.com/user-attachments/assets/cfbcdb52-1f65-41f8-a929-c29e829abe1d" />
 ## Hypothesis Testing
