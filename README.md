@@ -13,5 +13,9 @@ At this point where the contestant has only 2 doors to choose from the probabili
 ...
 
 ## Simulation Results :gear::repeat::chart_with_upwards_trend:
-<img width="1200" height="711" alt="Image" src="https://github.com/user-attachments/assets/cfbcdb52-1f65-41f8-a929-c29e829abe1d" />
+<img width="1200" height="711" alt="Image" src="https://github.com/user-attachments/assets/cfbcdb52-1f65-41f8-a929-c29e829abe1d" />  
+
 ## Hypothesis Testing
+
+## Conclusion/How to think of the monty hall problem now  
+now i think of the monty hall problem and instead of asking what is my probability of guessing right on the first guess I think what is my probability of guessing wrong? With that mindset, the probability of me guessing wrong on the first guess is 2/3rds or 0.67. After the host removes a door, the 2/3rds probability of guessing wrong is now condensed into my first guess. That means my probability of guessing right on my first try is now 1/3rd and the probability of the other door being correct is now 2/3rds (exactly what the simulation found). Thus switching is much better than sticking with my first guess. 
