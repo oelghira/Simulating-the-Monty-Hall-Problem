@@ -16,8 +16,7 @@ The file **file name** contains the R code I created to simulate the "Pick-A-Doo
 After 1,000 trials the results seem to confirm what has already been proven. Switching your pick after one of the losing doors is removed, gives nearly a two-thirds or 67% chance of winning the game. 
 
 ## Simulation Results :gear::repeat::chart_with_upwards_trend:
-<img width="1200" height="711" alt="Image" src="https://github.com/user-attachments/assets/cfbcdb52-1f65-41f8-a929-c29e829abe1d" />  
-
+<img width="1200" height="711" alt="Image" src="https://github.com/user-attachments/assets/57a7de96-69bb-4bac-a91c-9991d37b65bb" />  
 ## Hypothesis Testing
 
 ## Conclusion/How to think of the monty hall problem now  
