@@ -17,7 +17,24 @@ After 1,000 trials the results seem to confirm what has already been proven. Swi
 
 ## Simulation Results :gear::repeat::chart_with_upwards_trend:
 <img width="1200" height="711" alt="Image" src="https://github.com/user-attachments/assets/57a7de96-69bb-4bac-a91c-9991d37b65bb" />  
-## Hypothesis Testing
+
+## Hypothesis Testing  
+The results displayed above support the proven theory that switching doors after a losing door has been removed is the best strategy to win the game. While a picture is worth a thousand words a hypothesis test will be worth so much more to the credibility of each strategy.  
+
+In each trial/play of the game there are only 2 possible outcomes, selecting the right or wrong door. We also have a fixed number of trials in this case (1,000 trials/plays of the game). This is the perfect setup to use the properties of the binomial distribution for hypothesis testing. 2 hypothesis tests were conducted:  
+
+### 1st Hypothesis Test:  
+- **$H_0$: P(success = 0.50) vs $H_1$: P(success > 0.50)**
+- In English the first hypothesis we are testing is that the probability of picking the correct door is equal to 0.50 (a 50/50 chance) compared to the alternative hypothesis that our proability of picking the correct door is greater than 0.50. We will test the observed number of correct picks in each method.  
+- **Result1 (Switching Doors Strategy):** The observed number of successes was 667. The probability of getting 667 success in 1,000 trials is nearly 0. Under $H_0$ our expected number of successes is 500 (n x p i.e. 1,000 x 0.50 due to the binomial distribution). So our p-value is much smaller than 0.05 or 0.01 and thus we have evidence to reject $H_0$ in favor of the alternative.
+- **Result2 (Don't Switch Doors Strategy):** The observed number of successes was 333. The probability of getting 333 success in 1,000 trials is nearly 0. Under $H_0$ our expected number of successes is 500 (n x p i.e. 1,000 x 0.50 due to the binomial distribution). So our p-value is much smaller than 0.05 or 0.01 and thus we have evidence to reject $H_0$ in favor of the alternative.
+  
+### 2nd Hypothesis Test:  MIGHT WANT TO REDO THIS WITH A SET ALT HYPOTHESIS OF <0.67.............TBD
+- **$H_0$: P(success = 0.67) vs $H_1$: P(success != 0.67)**
+- In English the second hypothesis we are testing is that the probability of picking the correct door is equal to 0.67 (a two-thirds chance) compared to the alternative hypothesis that our proability of picking the correct door does not equal 0.67. We will test the observed number of correct picks in each method.
+- **Result1 (Switching Doors Strategy):** The observed number of successes was 667. The probability of getting 667 success in 1,000 trials hovers around 43% to 56% (depending on which side of the bell curve you'd like to approach it from, but those details will be spared). Under $H_0$ our expected number of successes is 670 (n x p i.e. 1,000 x 0.50 due to the binomial distribution). Our observed number of successes almost the same as our expected number. Our p-value is much larger than 0.05 and thus we have evidence in support of $H_0$.
+- **Result2 (Don't Switch Doors Strategy):** The observed number of successes was 333. The probability of getting 333 or more success in 1,000 trials is almost 100% (again sparing the probability theory behind why we can say 333 success or more as this is not the point of the exercise). With that our p-value is much larger than 0.05 and thus we have evidence in support of $H_0$.
+
 
 ## Conclusion/How to think of the monty hall problem now  
 now i think of the monty hall problem and instead of asking what is my probability of guessing right on the first guess I think what is my probability of guessing wrong? With that mindset, the probability of me guessing wrong on the first guess is 2/3rds or 0.67. After the host removes a door, the 2/3rds probability of guessing wrong is now condensed into my first guess. That means my probability of guessing right on my first try is now 1/3rd and the probability of the other door being correct is now 2/3rds (exactly what the simulation found). Thus switching is much better than sticking with my first guess. 
