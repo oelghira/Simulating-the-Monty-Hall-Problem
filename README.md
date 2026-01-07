@@ -1,7 +1,7 @@
 # Simulating-the-Monty-Hall-Problem :door::door::door:  
 *Using Simulation & Statistical Testing to Prove an Unintuitive Solution*     
 #### Omar El-Ghirani | January 6th, 2026
-I've got a masters in statistics, so I'm embarrassed to admit that I did not initially understand or trust the experts who've proven the strategy to solving the Monty Hall Problem. The mathematical proofs are rock solid, but this was a case where I trusted my gut more than the math.  
+I've got a master's in statistics, so I'm embarrassed to admit that I did not initially understand or trust the experts who've proven the strategy to solving the Monty Hall Problem. The mathematical proofs are rock solid, but this was a case where I trusted my gut more than the math.  
 
 The Monty Hall Problem comes from the 1970's game show *Let's Make a Deal* hosted by Monty Hall. In the game "Pick-A-Door" a lucky contestant would have the chance to win a fabulous prize if they could guess which door the prize was behind. The contestant would be given 3 doors to choose from. The contestant would pick a door, then Monty would remove one of the losing doors and ask the contestant "Do you want to switch your pick to the other door or stick with your first pick?" This question is where the Monty Hall Problem comes from. The probability theorists have proven that switching your pick gives you on average a two-thirds (2/3) chance at winning. I was skeptical that switching doors was any better than staying with the original pick as there are now 2 doors with 1 winner and 1 loser. The problem seemed more like a 50/50 chance to me.  
 
@@ -20,7 +20,7 @@ After 1,000 trials the results seem to confirm what has already been proven. Swi
 ## Hypothesis Testing  
 The results displayed above support the proven theory that switching doors after a losing door has been removed is the best strategy to win the game. While a picture is worth a thousand words a hypothesis test will be worth so much more to the credibility of each strategy.  
 
-In each trial/play of the game there are only 2 possible outcomes, selecting the right or wrong door. We also have a fixed number of trials in this case (1,000 trials/plays of the game). This is the perfect setup to use the properties of the binomial distribution for hypothesis testing. The aim of the hypothesis test is to approximate the true probability of winning the game for each strategy. 
+In each trial/play of the game there are only 2 possible outcomes, selecting the right or wrong door. We also have a fixed number of trials in this case (1,000 trials/plays of the game). This is the perfect setup to use the properties of the binomial distribution for hypothesis testing. The aim of the hypothesis tests is to evaluate whether the simulated results are consistent with hypothesized probabilities of winning the game for each strategy.
 
 To avoid repetition in explaining each hypothesis test, observed value, expected value, p-value, and interpretation in each test will be mentioned. For details on each test see code. 
 
