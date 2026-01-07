@@ -22,7 +22,7 @@ The results displayed above support the proven theory that switching doors after
 
 In each trial/play of the game there are only 2 possible outcomes, selecting the right or wrong door. We also have a fixed number of trials in this case (1,000 trials/plays of the game). This is the perfect setup to use the properties of the binomial distribution for hypothesis testing. The aim of the hypothesis tests is to evaluate whether the simulated results are consistent with hypothesized probabilities of winning the game for each strategy.
 
-To avoid repetition in explaining each hypothesis test, observed value, expected value, p-value, and interpretation in each test will be mentioned. For details on each test see code. 
+To avoid repetition in explaining each hypothesis test, observed value, expected value, p-value, and interpretation in each test will be mentioned. For details on each test, see code. 
 
 ### The Probability of Winning by Switching Doors:
 - **1st Test: $H_0$: P(success = 0.50) vs $H_1$: P(success > 0.50)**
